@@ -1,0 +1,19 @@
+# Antigravity IDE workspace files
+.agents/
+Gemini.md
+Agents.md
+DESIGN.md
+skills-lock.json
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor directories
+.vscode/
+.idea/
+
+# Node (if ever used for dev server)
+node_modules/
+npm-debug.log*

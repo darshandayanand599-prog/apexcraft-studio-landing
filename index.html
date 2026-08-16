@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Your Business Deserves More Than a Generic Website | Custom Web Design & Strategy</title>
+  <meta name="description" content="A professional website for coaches, consultants, trainers, experts, personal brands, and growing service businesses — designed to make your expertise clear, build trust, and give potential clients an easy reason to get in touch.">
+  <meta name="keywords" content="custom website design, website redesign, coaches website, consultant web design, personal brand website, Bangalore web design, INR web design">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Your Business Deserves More Than a Generic Website">
+  <meta property="og:description" content="A professional website designed to make your expertise clear, build trust, and turn visitors into clients.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Syne -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="styles.css?v=4.0">
+</head>
+<body>
+
+  <!-- Custom Magnetic Cursor for Project / Showcase Cards -->
+  <div class="custom-cursor" id="customCursor">
+    <span class="cursor-text">View</span>
+  </div>
+
+  <!-- ==========================================
+       HEADER & NAVIGATION
+       ========================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="brand-logo" id="brandLogo">
+        <span class="logo-accent-dot"></span>
+        <span class="logo-text">ApexCraft Studio</span>
+      </a>
+
+      <!-- Center Minimal Emblem -->
+      <div class="header-center-emblem" title="Bespoke Web Design & Strategy">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="3" y="3" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.6"/>
+          <rect x="9" y="9" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.6"/>
+        </svg>
+      </div>
+
+      <!-- Nav Links -->
+      <nav class="main-nav" id="mainNav">
+        <ul class="nav-list">
+          <li><a href="#empathy" class="nav-link">Why Us</a></li>
+          <li><a href="#deliverables" class="nav-link">Everything Included</a></li>
+          <li><a href="#process" class="nav-link">Process</a></li>
+          <li><a href="#who-is-this-for" class="nav-link">Who It's For</a></li>
+          <li><a href="#pricing" class="nav-link">Pricing</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+          <li><a href="#contact" class="nav-link open-contact-modal">Let's Talk</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================
+         HERO SECTION
+         ========================================== -->
+    <section class="hero-section" id="hero">
+      <div class="site-container">
+        
+        <div class="hero-content">
+          <div class="hero-eyebrow">
+            <span class="subline-dot"></span>
+            <span>Bespoke Web Design & Strategy for Coaches, Consultants & Growing Service Businesses</span>
+          </div>
+
+          <h1 class="hero-headline">
+            Your Business Deserves<br>
+            More Than a Generic Website.
+          </h1>
+          
+          <p class="hero-lead-paragraph">
+            A professional website for coaches, consultants, trainers, experts, personal brands, and growing service businesses — designed to make your expertise clear, build trust, and give potential clients an easy reason to get in touch.
+          </p>
+
+          <div class="hero-cta-wrapper">
+            <a href="#contact" class="btn-primary open-contact-modal" id="heroPrimaryCta">
+              Let’s Talk About Your Website →
+            </a>
+            <p class="hero-micro-text">
+              Free consultation. No pressure. We’ll look at your business, your current website if you have one, and what would make the biggest difference.
+            </p>
+          </div>
+        </div>
+
+        <!-- Audience Quick-Filter Tabs -->
+        <div class="filter-bar" id="audienceBar">
+          <span class="filter-bar-label">Specialized for:</span>
+          <button class="filter-pill active" data-target="all">All Service Businesses</button>
+          <button class="filter-pill" data-target="coaches">Coaches & Trainers</button>
+          <button class="filter-pill" data-target="consultants">Consultants & Experts</button>
+          <button class="filter-pill" data-target="brands">Personal Brands</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         PORTFOLIO / SHOWCASE PREVIEWS (1-ROW HORIZONTAL SCROLLABLE CAROUSEL)
+         ========================================== -->
+    <section class="work-section" id="work">
+      <div class="site-container">
+        
+        <div class="carousel-controls-header">
+          <span class="carousel-hint-text">← Swipe or scroll to explore projects →</span>
+          <div class="carousel-nav-arrows">
+            <button class="carousel-arrow-btn" id="carouselPrevBtn" aria-label="Previous showcase project">←</button>
+            <button class="carousel-arrow-btn" id="carouselNextBtn" aria-label="Next showcase project">→</button>
+          </div>
+        </div>
+
+        <div class="portfolio-carousel-wrapper" id="portfolioCarouselWrapper">
+          <div class="portfolio-carousel-track" id="portfolioGrid">
+            
+            <!-- Card 1: Desktop High-Converting Mockup -->
+            <article class="project-card" data-category="consultants">
+              <div class="card-media-wrapper">
+                <img src="images/hero_showcase.jpg" alt="High converting custom website showcase mockup" loading="lazy" class="project-img">
+                <div class="card-hover-overlay"></div>
+              </div>
+              <div class="card-meta">
+                <h2 class="project-title">Strategy & Authority Web Design</h2>
+                <span class="project-category">Custom Layout & Messaging</span>
+              </div>
+            </article>
+
+            <!-- Card 2: Mobile Responsive Mockup -->
+            <article class="project-card" data-category="coaches">
+              <div class="card-media-wrapper">
+                <img src="images/responsive_showcase.jpg" alt="Responsive mobile and desktop custom website design" loading="lazy" class="project-img">
+                <div class="card-hover-overlay"></div>
+              </div>
+              <div class="card-meta">
+                <h2 class="project-title">Mobile-First Fluid Experience</h2>
+                <span class="project-category">iOS, Android & Desktop Optimized</span>
+              </div>
+            </article>
+
+            <!-- Card 3: Fintech & Modern Consulting -->
+            <article class="project-card" data-category="consultants">
+              <div class="card-media-wrapper">
+                <img src="images/namier_capital.jpg" alt="Modern consulting app and web design showcase" loading="lazy" class="project-img">
+                <div class="card-hover-overlay"></div>
+              </div>
+              <div class="card-meta">
+                <h2 class="project-title">Executive & Advisory Presence</h2>
+                <span class="project-category">High-Trust Architecture</span>
+              </div>
+            </article>
+
+            <!-- Card 4: Brand Identity & Packaging -->
+            <article class="project-card" data-category="brands">
+              <div class="card-media-wrapper">
+                <img src="images/swski_brand.jpg" alt="Personal brand positioning and design" loading="lazy" class="project-img">
+                <div class="card-hover-overlay"></div>
+              </div>
+              <div class="card-meta">
+                <h2 class="project-title">Premium Brand Positioning</h2>
+                <span class="project-category">Visual Identity & Assets</span>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- Carousel Progress Bar -->
+        <div class="carousel-progress-container">
+          <div class="carousel-progress-bar" id="carouselProgressBar"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         EMPATHY & PROBLEM SECTION
+         ========================================== -->
+    <section class="empathy-section" id="empathy">
+      <div class="site-container">
+        
+        <div class="split-editorial-layout">
+          
+          <!-- Left Column -->
+          <div class="layout-left-col">
+            <h2 class="section-heading-large">
+              You’re Good at What You Do.<br>
+              Your Website Should Look Like It.
+            </h2>
+            
+            <div class="spirograph-container" aria-hidden="true">
+              <svg class="spirograph-svg" viewBox="0 0 200 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g class="spiro-group">
+                  <ellipse cx="100" cy="50" rx="90" ry="40" stroke="#f0c0ba" stroke-width="1.2"/>
+                  <ellipse cx="100" cy="95" rx="90" ry="40" stroke="#f0c0ba" stroke-width="1.2"/>
+                  <ellipse cx="100" cy="140" rx="90" ry="40" stroke="#f0c0ba" stroke-width="1.2"/>
+                  <ellipse cx="100" cy="185" rx="90" ry="40" stroke="#f0c0ba" stroke-width="1.2"/>
+                  <ellipse cx="100" cy="230" rx="90" ry="40" stroke="#f0c0ba" stroke-width="1.2"/>
+                  <ellipse cx="100" cy="275" rx="90" ry="40" stroke="#f0c0ba" stroke-width="1.2"/>
+                  <ellipse cx="100" cy="320" rx="90" ry="40" stroke="#f0c0ba" stroke-width="1.2"/>
+                </g>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Right Column -->
+          <div class="layout-right-col">
+            <div class="editorial-story-block">
+              <p class="story-lead">
+                You’ve spent years building your expertise.
+              </p>
+              <p>
+                You’ve worked with clients. You’ve learned your craft. You’ve built an offer you believe in.
+              </p>
+              <p>
+                Maybe most of your business has come through referrals, Instagram, LinkedIn, networking, or word of mouth.
+              </p>
+              
+              <div class="story-callout-card">
+                <h3 class="story-callout-title">But there’s one problem.</h3>
+                <p>When someone asks for your website, you’re not completely confident about sending them there.</p>
+                
+                <ul class="story-checklist">
+                  <li><span class="bullet-red">•</span> Maybe it looks outdated.</li>
+                  <li><span class="bullet-red">•</span> Maybe it feels too generic.</li>
+                  <li><span class="bullet-red">•</span> Maybe it doesn’t explain your services clearly.</li>
+                  <li><span class="bullet-red">•</span> Maybe it says what you do, but doesn’t really communicate why someone should choose you.</li>
+                  <li><span class="bullet-red">•</span> Or maybe you simply know that the business you’ve built deserves a better online presence.</li>
+                </ul>
+              </div>
+
+              <p class="story-conclusion">
+                <strong>That matters.</strong> Because before someone contacts you, your website is already shaping their first impression. And you want that impression to reflect the quality of the work you actually do.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         CORE VALUE PROPOSITION: "THE GOAL ISN'T JUST TO HAVE A WEBSITE"
+         ========================================== -->
+    <section class="value-prop-section">
+      <div class="site-container">
+        
+        <div class="split-editorial-layout">
+          
+          <div class="layout-left-col">
+            <h2 class="section-heading-large">
+              The Goal Isn’t Just<br>
+              to Have a Website.
+            </h2>
+          </div>
+
+          <div class="layout-right-col">
+            <p class="value-lead-text">
+              A website can be beautiful and still leave people wondering what you actually offer. It can look professional and still feel exactly like ten other websites in your industry. It can list your services without giving someone a strong reason to choose you.
+            </p>
+
+            <h3 class="value-subheading">A good website should do more. It should help a potential client quickly understand:</h3>
+
+            <div class="clarity-grid">
+              <div class="clarity-card">
+                <span class="clarity-num">01</span>
+                <p><strong>What you do.</strong></p>
+              </div>
+              <div class="clarity-card">
+                <span class="clarity-num">02</span>
+                <p><strong>Who you help.</strong></p>
+              </div>
+              <div class="clarity-card">
+                <span class="clarity-num">03</span>
+                <p><strong>What you can help them achieve.</strong></p>
+              </div>
+              <div class="clarity-card">
+                <span class="clarity-num">04</span>
+                <p><strong>Why they should trust you.</strong></p>
+              </div>
+              <div class="clarity-card">
+                <span class="clarity-num">05</span>
+                <p><strong>What makes your business worth considering.</strong></p>
+              </div>
+              <div class="clarity-card">
+                <span class="clarity-num">06</span>
+                <p><strong>What they should do next.</strong></p>
+              </div>
+            </div>
+
+            <p class="value-summary">
+              That’s the difference between a website that simply exists and a website that actually supports your business.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         VISION & "THAT'S WHAT WE BUILD" SECTION
+         ========================================== -->
+    <section class="vision-section">
+      <div class="site-container">
+        
+        <div class="vision-hero-card">
+          <div class="vision-hero-inner">
+            <span class="vision-eyebrow">THE VISION</span>
+            <h2 class="vision-title">
+              Imagine Being Completely Comfortable<br>
+              Sending Someone Your Website.
+            </h2>
+
+            <div class="vision-points-grid">
+              <div class="vision-point">
+                <span class="vision-check">✓</span>
+                <p>A potential client lands on your homepage.</p>
+              </div>
+              <div class="vision-point">
+                <span class="vision-check">✓</span>
+                <p>Within seconds, they understand what you do and who you’re for.</p>
+              </div>
+              <div class="vision-point">
+                <span class="vision-check">✓</span>
+                <p>They can see your services without having to search for them.</p>
+              </div>
+              <div class="vision-point">
+                <span class="vision-check">✓</span>
+                <p>Your experience and expertise are easy to understand.</p>
+              </div>
+              <div class="vision-point">
+                <span class="vision-check">✓</span>
+                <p>Your testimonials or results give them confidence.</p>
+              </div>
+              <div class="vision-point">
+                <span class="vision-check">✓</span>
+                <p>The design feels professional and relevant to your business.</p>
+              </div>
+              <div class="vision-point">
+                <span class="vision-check">✓</span>
+                <p>And when they’re ready to take the next step, they know exactly how to contact you.</p>
+              </div>
+              <div class="vision-point">
+                <span class="vision-check">✓</span>
+                <p>You don’t have to explain everything yourself. Your website has already started the conversation.</p>
+              </div>
+            </div>
+
+            <div class="build-statement-card">
+              <h3 class="build-statement-title">That’s What We Build.</h3>
+              <p>
+                A professional website designed around your business, your audience, and the action you want visitors to take.
+              </p>
+              <p>
+                We start by understanding what you do and what your potential clients need to know. Then we turn that into a clear website structure, persuasive messaging, and a polished visual experience.
+              </p>
+              <p class="highlight-text">
+                The result is a website that feels like your business — not a generic template with your logo added to it.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         DELIVERABLES: "EVERYTHING YOU NEED" (SPIROGRAPH + ACCORDION)
+         ========================================== -->
+    <section class="services-section" id="deliverables">
+      <div class="site-container">
+        
+        <div class="services-layout">
+          
+          <!-- Left Column: Title & Animated Spirograph Graphic -->
+          <div class="services-graphic-col">
+            <h2 class="section-heading-large">
+              Everything<br>
+              You Need for a<br>
+              Professional<br>
+              Online Presence
+            </h2>
+            
+            <div class="spirograph-container" aria-hidden="true">
+              <svg class="spirograph-svg" viewBox="0 0 200 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g class="spiro-group">
+                  <ellipse cx="100" cy="50" rx="90" ry="40" stroke="#f0c0ba" stroke-width="1.2"/>
+                  <ellipse cx="100" cy="90" rx="90" ry="40" stroke="#f0c0ba" stroke-width="1.2"/>
+                  <ellipse cx="100" cy="130" rx="90" ry="40" stroke="#f0c0ba" stroke-width="1.2"/>
+                  <ellipse cx="100" cy="170" rx="90" ry="40" stroke="#f0c0ba" stroke-width="1.2"/>
+                  <ellipse cx="100" cy="210" rx="90" ry="40" stroke="#f0c0ba" stroke-width="1.2"/>
+                  <ellipse cx="100" cy="250" rx="90" ry="40" stroke="#f0c0ba" stroke-width="1.2"/>
+                  <ellipse cx="100" cy="290" rx="90" ry="40" stroke="#f0c0ba" stroke-width="1.2"/>
+                  <ellipse cx="100" cy="330" rx="90" ry="40" stroke="#f0c0ba" stroke-width="1.2"/>
+                  <ellipse cx="100" cy="370" rx="90" ry="40" stroke="#f0c0ba" stroke-width="1.2"/>
+                  <ellipse cx="100" cy="410" rx="90" ry="40" stroke="#f0c0ba" stroke-width="1.2"/>
+                </g>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Accordion of Deliverables -->
+          <div class="services-accordion-col">
+            <div class="accordion-list" id="deliverablesAccordion">
+              
+              <!-- Item 1 -->
+              <div class="accordion-item active">
+                <button class="accordion-header" aria-expanded="true">
+                  <span class="accordion-title">Website Strategy & Structure</span>
+                  <span class="accordion-icon">–</span>
+                </button>
+                <div class="accordion-body">
+                  <p class="accordion-desc">
+                    We figure out what your website needs to communicate, which pages make sense, and how visitors should move through the experience.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="accordion-item">
+                <button class="accordion-header" aria-expanded="false">
+                  <span class="accordion-title">Professional Website Design</span>
+                  <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-body">
+                  <p class="accordion-desc">
+                    A clean, modern design created around your business, your audience, and the image you want to present.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Item 3 -->
+              <div class="accordion-item">
+                <button class="accordion-header" aria-expanded="false">
+                  <span class="accordion-title">Clear Website Messaging</span>
+                  <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-body">
+                  <p class="accordion-desc">
+                    Your website should make it easy to understand what you do, who you help, and why someone should consider working with you.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Item 4 -->
+              <div class="accordion-item">
+                <button class="accordion-header" aria-expanded="false">
+                  <span class="accordion-title">Homepage</span>
+                  <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-body">
+                  <p class="accordion-desc">
+                    A strong first impression that clearly introduces your business and guides visitors toward the next step.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Item 5 -->
+              <div class="accordion-item">
+                <button class="accordion-header" aria-expanded="false">
+                  <span class="accordion-title">About Section</span>
+                  <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-body">
+                  <p class="accordion-desc">
+                    Show the person or expertise behind the business in a way that builds credibility without turning your website into a long autobiography.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Item 6 -->
+              <div class="accordion-item">
+                <button class="accordion-header" aria-expanded="false">
+                  <span class="accordion-title">Services or Offer Section</span>
+                  <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-body">
+                  <p class="accordion-desc">
+                    Present what you offer clearly so visitors understand what they can actually work with you for.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Item 7 -->
+              <div class="accordion-item">
+                <button class="accordion-header" aria-expanded="false">
+                  <span class="accordion-title">Testimonials & Social Proof</span>
+                  <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-body">
+                  <p class="accordion-desc">
+                    Give potential clients real reasons to trust you by making relevant feedback, experience, results, or credentials easy to find.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Item 8 -->
+              <div class="accordion-item">
+                <button class="accordion-header" aria-expanded="false">
+                  <span class="accordion-title">Clear Calls to Action</span>
+                  <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-body">
+                  <p class="accordion-desc">
+                    Make it obvious whether visitors should enquire, call, message you, book a consultation, or take another agreed next step.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Item 9 -->
+              <div class="accordion-item">
+                <button class="accordion-header" aria-expanded="false">
+                  <span class="accordion-title">Mobile-Friendly Experience</span>
+                  <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-body">
+                  <p class="accordion-desc">
+                    Your website will be designed to work properly across desktop and mobile devices.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Item 10 -->
+              <div class="accordion-item">
+                <button class="accordion-header" aria-expanded="false">
+                  <span class="accordion-title">Contact & Integrations</span>
+                  <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-body">
+                  <p class="accordion-desc">
+                    Connect relevant tools such as WhatsApp, enquiry forms, calendars, or booking systems where required.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Item 11 -->
+              <div class="accordion-item">
+                <button class="accordion-header" aria-expanded="false">
+                  <span class="accordion-title">Basic SEO Foundations</span>
+                  <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-body">
+                  <p class="accordion-desc">
+                    Include fundamental on-page SEO elements where they are part of the agreed project scope.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="scope-note-box">
+              <p><em>Final pages, functionality, integrations, and scope are agreed before the project begins.</em></p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         PHILOSOPHY: "NOT JUST A WEBSITE THAT LOOKS GOOD"
+         ========================================== -->
+    <section class="philosophy-section">
+      <div class="site-container">
+        
+        <div class="split-editorial-layout">
+          
+          <div class="layout-left-col">
+            <h2 class="section-heading-large">
+              Not Just a Website<br>
+              That Looks Good.
+            </h2>
+          </div>
+
+          <div class="layout-right-col">
+            <p class="philosophy-lead">
+              There are plenty of people who can put together a website. The difference is how the website is planned.
+            </p>
+            <p>
+              Instead of starting with a template and trying to fit your business into it, we start with your business:
+            </p>
+
+            <div class="questions-flow-grid">
+              <div class="q-flow-item">What do you offer?</div>
+              <div class="q-flow-item">Who are you trying to attract?</div>
+              <div class="q-flow-item">What makes you different?</div>
+              <div class="q-flow-item">What questions will potential clients have?</div>
+              <div class="q-flow-item">What do they need to know before they feel comfortable contacting you?</div>
+            </div>
+
+            <p class="philosophy-conclusion">
+              Those answers shape the website. So the final result isn’t just visually polished. <strong>It’s clear. It’s relevant. It feels credible.</strong> And it gives visitors a straightforward path to becoming a potential client.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         DARK INTERACTIVE PROCESS ORBITAL SECTION
+         ========================================== -->
+    <section class="process-dark-section" id="process">
+      <div class="site-container">
+        
+        <div class="process-section-title-wrap">
+          <span class="process-section-eyebrow">METHODOLOGY</span>
+          <h2 class="process-section-main-heading">A Straightforward Process</h2>
+        </div>
+
+        <!-- Interactive Circular Orbit Wheel -->
+        <div class="process-orbital-stage" id="orbitalStage">
+          
+          <!-- Outer Circular Track with Progress Nodes -->
+          <div class="orbit-ring">
+            <div class="orbit-node node-1 active" data-step="0"></div>
+            <div class="orbit-node node-2" data-step="1"></div>
+            <div class="orbit-node node-3" data-step="2"></div>
+            <div class="orbit-node node-4" data-step="3"></div>
+            <div class="orbit-node node-5" data-step="4"></div>
+          </div>
+
+          <!-- Central Active Step Content -->
+          <div class="orbit-center-display">
+            
+            <span class="process-step-eyebrow" id="processStepEyebrow">STAGE 01</span>
+            
+            <h3 class="process-step-title" id="processStepTitle">01 — Discover</h3>
+            
+            <!-- Animated Wireframe Geometric Spirograph -->
+            <div class="process-wireframe-graphic" id="processGraphic">
+              <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="60" cy="60" r="16" stroke="#ff3823" stroke-width="1.2" opacity="0.4"/>
+                <circle cx="60" cy="60" r="28" stroke="#ff3823" stroke-width="1.2" opacity="0.6"/>
+                <circle cx="60" cy="60" r="40" stroke="#ff3823" stroke-width="1.2" opacity="0.8"/>
+                <circle cx="60" cy="60" r="52" stroke="#ff3823" stroke-width="1.2" opacity="1"/>
+                <ellipse cx="60" cy="60" rx="52" ry="24" stroke="#ffffff" stroke-width="0.8" opacity="0.3" transform="rotate(25 60 60)"/>
+                <ellipse cx="60" cy="60" rx="52" ry="24" stroke="#ffffff" stroke-width="0.8" opacity="0.3" transform="rotate(-25 60 60)"/>
+              </svg>
+            </div>
+
+            <p class="process-step-description" id="processStepDesc">
+              We talk about your business, services, audience, goals, existing website, and what you want the new website to accomplish.
+            </p>
+
+            <!-- Navigation Controls -->
+            <div class="process-step-controls">
+              <button class="step-btn prev-step" id="prevStepBtn" aria-label="Previous Step">←</button>
+              <div class="step-dots" id="stepDots">
+                <span class="step-dot active" data-index="0"></span>
+                <span class="step-dot" data-index="1"></span>
+                <span class="step-dot" data-index="2"></span>
+                <span class="step-dot" data-index="3"></span>
+                <span class="step-dot" data-index="4"></span>
+              </div>
+              <button class="step-btn next-step" id="nextStepBtn" aria-label="Next Step">→</button>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="process-cta-center">
+          <a href="#contact" class="btn-pill-light open-contact-modal">Start Your Website →</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         CONFIDENCE & CHANNELS (DARK SECTION CONTINUED)
+         ========================================== -->
+    <section class="capabilities-dark-section">
+      <div class="site-container">
+        
+        <div class="capabilities-header">
+          <h2 class="capabilities-main-title">A Website You’ll Feel Confident Sharing</h2>
+          <p class="capabilities-subtitle">Your website should make it easier to send someone:</p>
+        </div>
+
+        <div class="capabilities-grid">
+          
+          <!-- Item 1 -->
+          <div class="capability-card">
+            <div class="capability-card-top">
+              <h3 class="capability-title">From Instagram</h3>
+              <span class="capability-arrow">→</span>
+            </div>
+            <p class="capability-desc">
+              Direct from your Instagram profile straight to your business with clear positioning that commands authority.
+            </p>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="capability-card">
+            <div class="capability-card-top">
+              <h3 class="capability-title">From LinkedIn</h3>
+              <span class="capability-arrow">→</span>
+            </div>
+            <p class="capability-desc">
+              Direct from your LinkedIn profile straight to your high-value services and professional advisory offers.
+            </p>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="capability-card">
+            <div class="capability-card-top">
+              <h3 class="capability-title">From a Referral</h3>
+              <span class="capability-arrow">→</span>
+            </div>
+            <p class="capability-desc">
+              Transforming a word-of-mouth referral into an immediate, high-trust conversation and closed deal.
+            </p>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="capability-card">
+            <div class="capability-card-top">
+              <h3 class="capability-title">From “What do you do?”</h3>
+              <span class="capability-arrow">→</span>
+            </div>
+            <p class="capability-desc">
+              Converting curiosity into “I’d like to know more.” That’s the kind of online presence we build.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         WHO IS THIS FOR SECTION
+         ========================================== -->
+    <section class="who-section" id="who-is-this-for">
+      <div class="site-container">
+        
+        <div class="split-editorial-layout">
+          
+          <div class="layout-left-col">
+            <h2 class="section-heading-large">Who Is This For?</h2>
+            <p class="who-subheading">
+              This is for people who already have something valuable to offer and need a professional website to represent it.
+            </p>
+
+            <div class="target-badges-cloud">
+              <span class="target-badge">Coaches</span>
+              <span class="target-badge">Trainers</span>
+              <span class="target-badge">Consultants</span>
+              <span class="target-badge">Experts</span>
+              <span class="target-badge">Personal Brands</span>
+              <span class="target-badge">Professional Service Providers</span>
+              <span class="target-badge">Growing Service Businesses</span>
+            </div>
+          </div>
+
+          <div class="layout-right-col">
+            <div class="useful-when-box">
+              <h3 class="useful-when-title">It’s especially useful if:</h3>
+              
+              <ul class="useful-list">
+                <li><span class="useful-icon">✓</span> You’re ready to take your online presence more seriously.</li>
+                <li><span class="useful-icon">✓</span> Your current website feels outdated, generic, or incomplete.</li>
+                <li><span class="useful-icon">✓</span> You rely on referrals, social media, networking, or content to attract potential clients.</li>
+                <li><span class="useful-icon">✓</span> You want visitors to understand your business before they contact you.</li>
+                <li><span class="useful-icon">✓</span> You want a website you can confidently share.</li>
+                <li><span class="useful-icon">✓</span> You need a professional website without unnecessary complexity.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         ELEVATED 3-TIER PRICING & COMPARISON MATRIX
+         ========================================== -->
+    <section class="pricing-section" id="pricing">
+      <div class="site-container">
+        
+        <div class="pricing-section-header">
+          <span class="pricing-eyebrow">TRANSPARENT PRICING</span>
+          <h2 class="section-heading-large">Simple, Predictable Investment.</h2>
+          <p class="pricing-header-sub">
+            No hidden costs or unexpected hourly rates. Choose the tier that matches your stage or get a tailored quote.
+          </p>
+        </div>
+
+        <!-- 3 Tier Pricing Cards Grid -->
+        <div class="pricing-cards-grid">
+          
+          <!-- Tier 1: Starter -->
+          <div class="pricing-card" data-tier="Starter">
+            <div class="pricing-card-header">
+              <div class="tier-badge">STARTER</div>
+              <h3 class="tier-name">Starter</h3>
+              <p class="tier-best-for">Best for simple presence</p>
+            </div>
+            
+            <div class="tier-price-wrap">
+              <span class="tier-currency">₹</span>
+              <span class="tier-amount">9,900</span>
+              <span class="tier-period">one-time</span>
+            </div>
+            
+            <div class="tier-scope-pill">1 Page Website</div>
+
+            <ul class="tier-features-list">
+              <li><span class="feat-check">✓</span> 1 High-converting single page</li>
+              <li><span class="feat-check">✓</span> Custom visual design</li>
+              <li><span class="feat-check">✓</span> Mobile responsive layout</li>
+              <li><span class="feat-check">✓</span> Website structure & flow</li>
+              <li><span class="feat-check">✓</span> Basic copy & messaging support</li>
+              <li><span class="feat-check">✓</span> Testimonials & social proof</li>
+              <li><span class="feat-check">✓</span> Direct WhatsApp & contact</li>
+              <li><span class="feat-check">✓</span> Basic strategy</li>
+              <li><span class="feat-check">✓</span> 1 Round of revisions</li>
+            </ul>
+
+            <div class="tier-action">
+              <a href="#contact" class="btn-tier-outline open-contact-modal" data-plan="Starter (₹9,900)">
+                Choose Starter →
+              </a>
+            </div>
+          </div>
+
+          <!-- Tier 2: Professional (Featured / Most Popular) -->
+          <div class="pricing-card featured" data-tier="Professional">
+            <div class="popular-ribbon">MOST POPULAR</div>
+            <div class="pricing-card-header">
+              <div class="tier-badge-highlight">PROFESSIONAL</div>
+              <h3 class="tier-name">Professional</h3>
+              <p class="tier-best-for">Best for growing businesses</p>
+            </div>
+            
+            <div class="tier-price-wrap">
+              <span class="tier-currency">₹</span>
+              <span class="tier-amount">19,900</span>
+              <span class="tier-period">one-time</span>
+            </div>
+
+            <div class="tier-scope-pill featured-pill">Up to 5 Pages</div>
+
+            <ul class="tier-features-list">
+              <li><span class="feat-check">✓</span> <strong>Up to 5 custom pages</strong></li>
+              <li><span class="feat-check">✓</span> Complete custom design</li>
+              <li><span class="feat-check">✓</span> Mobile-first fluid experience</li>
+              <li><span class="feat-check">✓</span> Structured multi-page architecture</li>
+              <li><span class="feat-check">✓</span> Full copy & messaging support</li>
+              <li><span class="feat-check">✓</span> Testimonials & proof sections</li>
+              <li><span class="feat-check">✓</span> Contact & WhatsApp integration</li>
+              <li><span class="feat-check">✓</span> <strong>Booking / calendar integration</strong></li>
+              <li><span class="feat-check">✓</span> <strong>Basic on-page SEO foundations</strong></li>
+              <li><span class="feat-check">✓</span> <strong>Conversion strategy</strong></li>
+              <li><span class="feat-check">✓</span> <strong>2 Rounds of revisions</strong></li>
+            </ul>
+
+            <div class="tier-action">
+              <a href="#contact" class="btn-tier-featured open-contact-modal" data-plan="Professional (₹19,900)">
+                Choose Professional →
+              </a>
+            </div>
+          </div>
+
+          <!-- Tier 3: Premium -->
+          <div class="pricing-card" data-tier="Premium">
+            <div class="pricing-card-header">
+              <div class="tier-badge">PREMIUM</div>
+              <h3 class="tier-name">Premium</h3>
+              <p class="tier-best-for">Best for more established business</p>
+            </div>
+            
+            <div class="tier-price-wrap">
+              <span class="tier-currency">₹</span>
+              <span class="tier-amount">29,900</span>
+              <span class="tier-period">one-time</span>
+            </div>
+
+            <div class="tier-scope-pill">Up to 8 Pages</div>
+
+            <ul class="tier-features-list">
+              <li><span class="feat-check">✓</span> <strong>Up to 8 custom pages</strong></li>
+              <li><span class="feat-check">✓</span> Bespoke high-end visual design</li>
+              <li><span class="feat-check">✓</span> Fluid responsive across all screens</li>
+              <li><span class="feat-check">✓</span> Full website structure</li>
+              <li><span class="feat-check">✓</span> Full copy & messaging support</li>
+              <li><span class="feat-check">✓</span> Rich social proof & case study engine</li>
+              <li><span class="feat-check">✓</span> Contact & WhatsApp integration</li>
+              <li><span class="feat-check">✓</span> Booking & scheduling integration</li>
+              <li><span class="feat-check">✓</span> Basic SEO & speed foundations</li>
+              <li><span class="feat-check">✓</span> Full digital strategy</li>
+              <li><span class="feat-check">✓</span> <strong>3 Rounds of revisions</strong></li>
+            </ul>
+
+            <div class="tier-action">
+              <a href="#contact" class="btn-tier-outline open-contact-modal" data-plan="Premium (₹29,900)">
+                Choose Premium →
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+
+
+        <!-- Scope & Guarantee Assurance Banner -->
+        <div class="pricing-guarantee-card">
+          <div class="guarantee-icon">✦</div>
+          <div class="guarantee-content">
+            <h4 class="guarantee-heading">Fixed Scope & Zero Hidden Extras</h4>
+            <p class="guarantee-text">
+              Every project is fully agreed on before kickoff. You’ll know the exact page count, content structure, integrations, and delivery milestones with 100% clarity before any deposit.
+            </p>
+          </div>
+          <a href="#contact" class="btn-primary open-contact-modal">Get a Bespoke Proposal →</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         COMPREHENSIVE FAQ SECTION ("Your Questions Answered")
+         ========================================== -->
+    <section class="faq-section" id="faq">
+      <div class="site-container">
+        
+        <div class="faq-layout">
+          
+          <div class="faq-graphic-col">
+            <h2 class="section-heading-large">Your questions<br>answered</h2>
+            
+            <div class="spirograph-container" aria-hidden="true">
+              <svg class="spirograph-svg" viewBox="0 0 200 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g class="spiro-group">
+                  <ellipse cx="100" cy="50" rx="90" ry="40" stroke="#f0c0ba" stroke-width="1.2"/>
+                  <ellipse cx="100" cy="100" rx="90" ry="40" stroke="#f0c0ba" stroke-width="1.2"/>
+                  <ellipse cx="100" cy="150" rx="90" ry="40" stroke="#f0c0ba" stroke-width="1.2"/>
+                  <ellipse cx="100" cy="200" rx="90" ry="40" stroke="#f0c0ba" stroke-width="1.2"/>
+                  <ellipse cx="100" cy="250" rx="90" ry="40" stroke="#f0c0ba" stroke-width="1.2"/>
+                  <ellipse cx="100" cy="300" rx="90" ry="40" stroke="#f0c0ba" stroke-width="1.2"/>
+                </g>
+              </svg>
+            </div>
+          </div>
+
+          <div class="faq-accordion-col">
+            <div class="accordion-list" id="faqAccordion">
+              
+              <!-- FAQ 1: What If You Already Have a Website? -->
+              <div class="accordion-item active">
+                <button class="accordion-header" aria-expanded="true">
+                  <span class="accordion-title">What If You Already Have a Website?</span>
+                  <span class="accordion-icon">–</span>
+                </button>
+                <div class="accordion-body">
+                  <p class="accordion-desc">
+                    You may not need to start from scratch. If your existing website has a useful foundation, we can work from it. But if your business has changed and your website no longer reflects your services, expertise, or the clients you want to attract, a redesign can make a meaningful difference.
+                  </p>
+                  <p class="accordion-desc">
+                    The question isn’t whether you already have a website. It’s whether the website you have is doing your business justice.
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ 2: Can’t I Just Use a Template? -->
+              <div class="accordion-item">
+                <button class="accordion-header" aria-expanded="false">
+                  <span class="accordion-title">Can’t I Just Use a Template?</span>
+                  <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-body">
+                  <p class="accordion-desc">
+                    You can. Templates can be useful, especially when you know exactly what you need. But a template doesn’t automatically solve unclear messaging, weak structure, generic positioning, or a confusing path to enquiry.
+                  </p>
+                  <p class="accordion-desc">
+                    The goal isn’t to avoid templates simply because they’re templates. The goal is to create a website that feels right for your business and makes sense to the people you want to attract.
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ 3: Will a New Website Get Me Clients? -->
+              <div class="accordion-item">
+                <button class="accordion-header" aria-expanded="false">
+                  <span class="accordion-title">Will a New Website Get Me Clients?</span>
+                  <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-body">
+                  <p class="accordion-desc">
+                    No website can honestly guarantee that. Your offer, marketing, traffic, reputation, and sales process all matter.
+                  </p>
+                  <p class="accordion-desc">
+                    What a good website can do is make the people who visit more likely to understand your business, trust what they see, and know what to do next. That makes your website a much more useful part of your overall marketing and sales process.
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ 4: I Don’t Know What I Want My Website to Look Like -->
+              <div class="accordion-item">
+                <button class="accordion-header" aria-expanded="false">
+                  <span class="accordion-title">I Don’t Know What I Want My Website to Look Like.</span>
+                  <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-body">
+                  <p class="accordion-desc">
+                    That’s completely fine. You know your business. You don’t need to know which sections belong on the homepage, what layout will work best, or how to turn everything you know into website copy. We work through those decisions together.
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ 5: I Don’t Have Much Time -->
+              <div class="accordion-item">
+                <button class="accordion-header" aria-expanded="false">
+                  <span class="accordion-title">I Don’t Have Much Time.</span>
+                  <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-body">
+                  <p class="accordion-desc">
+                    You shouldn’t have to spend your week managing a website project. We keep your involvement focused on the information, decisions, and approvals that actually require you. You run your business. The website process should fit around that.
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ 6: I Don’t Want Another Generic Website -->
+              <div class="accordion-item">
+                <button class="accordion-header" aria-expanded="false">
+                  <span class="accordion-title">I Don’t Want Another Generic Website.</span>
+                  <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-body">
+                  <p class="accordion-desc">
+                    Neither do we. The website should reflect your particular business, offer, expertise, audience, and personality. The goal isn’t to make you look like every other coach, consultant, trainer, or service provider. It’s to make your business easier to understand and easier to trust.
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ 7: How Long Does It Take? -->
+              <div class="accordion-item">
+                <button class="accordion-header" aria-expanded="false">
+                  <span class="accordion-title">How Long Does It Take?</span>
+                  <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-body">
+                  <p class="accordion-desc">
+                    The timeline depends on the project scope and how quickly content, feedback, and approvals are provided. A clear project timeline will be agreed before we start.
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ 8: Do You Build New Websites and Redesign Existing Ones? -->
+              <div class="accordion-item">
+                <button class="accordion-header" aria-expanded="false">
+                  <span class="accordion-title">Do You Build New Websites and Redesign Existing Ones?</span>
+                  <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-body">
+                  <p class="accordion-desc">
+                    Yes. Whether you’re starting from zero or replacing an existing website, the process is adapted to what your business actually needs.
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ 9: Do You Help With the Copy? -->
+              <div class="accordion-item">
+                <button class="accordion-header" aria-expanded="false">
+                  <span class="accordion-title">Do You Help With the Copy?</span>
+                  <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-body">
+                  <p class="accordion-desc">
+                    Yes. Messaging and copy support can be included depending on the project scope. The goal is to make the website clear and persuasive rather than simply filling pages with information.
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ 10: Will My Website Work on Mobile? -->
+              <div class="accordion-item">
+                <button class="accordion-header" aria-expanded="false">
+                  <span class="accordion-title">Will My Website Work on Mobile?</span>
+                  <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-body">
+                  <p class="accordion-desc">
+                    Yes. The website is designed with desktop and mobile users in mind.
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ 11: Can You Connect WhatsApp or a Booking System? -->
+              <div class="accordion-item">
+                <button class="accordion-header" aria-expanded="false">
+                  <span class="accordion-title">Can You Connect WhatsApp or a Booking System?</span>
+                  <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-body">
+                  <p class="accordion-desc">
+                    Yes. Relevant WhatsApp, contact forms, calendars, booking tools, or other integrations can be included depending on the project.
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ 12: What Do I Need to Provide? -->
+              <div class="accordion-item">
+                <button class="accordion-header" aria-expanded="false">
+                  <span class="accordion-title">What Do I Need to Provide?</span>
+                  <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-body">
+                  <p class="accordion-desc">
+                    You’ll provide the business-specific information, images, testimonials, credentials, service details, and other materials that only you can provide. We’ll help organize that information into a website that is easy for your visitors to understand.
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ 13: What Happens After I Enquire? -->
+              <div class="accordion-item">
+                <button class="accordion-header" aria-expanded="false">
+                  <span class="accordion-title">What Happens After I Enquire?</span>
+                  <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-body">
+                  <p class="accordion-desc">
+                    We’ll have a short conversation about your business, what you need, and what you want the website to accomplish. If it looks like a good fit, we’ll discuss the scope, timeline, and next steps. If it isn’t the right fit, you’ll know that too.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================
+       IMMERSIVE DARK FOOTER & CLOSING CTA
+       ========================================== -->
+  <footer class="site-footer" id="contact">
+    <div class="site-container">
+      
+      <div class="footer-cta-card">
+        <span class="footer-cta-eyebrow">TAKE THE NEXT STEP</span>
+        <h2 class="footer-cta-heading">
+          Your Business Has Come This Far.<br>
+          Your website should reflect that.
+        </h2>
+        
+        <p class="footer-cta-body">
+          You don’t need the biggest website. You don’t need unnecessary features. And you don’t need something that looks impressive but leaves people confused.
+        </p>
+        <p class="footer-cta-body-highlight">
+          You need a professional online presence that clearly communicates what you do, builds confidence, and makes it easy for the right people to take the next step.
+        </p>
+        
+        <p class="footer-cta-prompt">If that’s what you’re looking for, let’s talk.</p>
+
+        <div class="footer-action-wrap">
+          <a href="#contact" class="btn-primary open-contact-modal" id="footerCtaBtn">
+            Let’s Talk About Your Website →
+          </a>
+          <p class="footer-micro-guarantee">
+            Free consultation. Tell me about your business, what you need, and where your current website falls short.
+          </p>
+        </div>
+      </div>
+
+
+
+      <!-- Bottom Legal & Socials -->
+      <div class="footer-bottom-bar">
+        <div class="footer-copyright">
+          © 2026 ApexCraft Studio. All rights reserved. Built with precision for coaches, consultants, experts & growing businesses.
+        </div>
+        
+        <div class="footer-social-links">
+          <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="#" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://wa.me/919108080872?text=Hi%2C%20I%27m%20interested%20in%20a%20website%20consultation" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       FIXED FLOATING WHATSAPP CHAT BUBBLE
+       ========================================== -->
+  <a href="https://wa.me/919108080872?text=Hi%2C%20I%27m%20interested%20in%20a%20website%20consultation" class="floating-whatsapp-fab" id="whatsappFab" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+    <svg class="whatsapp-icon" viewBox="0 0 24 24" width="34" height="34" fill="currentColor">
+      <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.8 7.37 7.5 3.67 12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15ZM16.56 14.37C16.31 14.25 15.09 13.65 14.86 13.56C14.64 13.48 14.47 13.44 14.31 13.69C14.14 13.94 13.66 14.51 13.51 14.68C13.36 14.84 13.22 14.86 12.97 14.74C12.72 14.61 11.92 14.35 10.97 13.5C10.23 12.84 9.73 12.03 9.58 11.78C9.44 11.53 9.56 11.4 9.69 11.27C9.8 11.16 9.94 10.98 10.06 10.84C10.19 10.7 10.23 10.6 10.31 10.43C10.39 10.26 10.35 10.12 10.29 10C10.23 9.88 9.73 8.65 9.53 8.14C9.32 7.65 9.12 7.71 8.97 7.71C8.83 7.7 8.66 7.7 8.5 7.7C8.33 7.7 8.06 7.76 7.83 8.01C7.6 8.26 6.95 8.87 6.95 10.12C6.95 11.37 7.86 12.57 7.99 12.74C8.11 12.91 9.78 15.48 12.33 16.58C12.94 16.84 13.41 17 13.78 17.12C14.39 17.31 14.94 17.28 15.38 17.22C15.87 17.15 16.89 16.6 17.1 16.01C17.31 15.42 17.31 14.92 17.25 14.82C17.18 14.71 17.04 14.65 16.79 14.53L16.56 14.37Z"/>
+    </svg>
+    <span class="whatsapp-tooltip">Chat with us</span>
+  </a>
+
+  <!-- ==========================================
+       5% DISCOUNT POP-UP MODAL (CODE: POP5)
+       ========================================== -->
+  <div class="faq-discount-popup" id="faqDiscountPopup" aria-hidden="true">
+    <div class="faq-popup-card">
+      <button class="faq-popup-close-btn" id="faqPopupCloseBtn" aria-label="Close discount offer">✕</button>
+      
+      <div class="faq-popup-header">
+        <span class="faq-popup-eyebrow">⚡ EXCLUSIVE OFFER</span>
+        <h3 class="faq-popup-title">Get 5% Off Any Package</h3>
+        <p class="faq-popup-desc">
+          Still considering your options? Lock in an instant <strong>5% discount</strong> on your website project using code <strong>POP5</strong>.
+        </p>
+      </div>
+
+      <div class="faq-popup-code-box">
+        <div class="code-badge-wrap">
+          <span class="code-label">PROMO CODE</span>
+          <span class="code-value">POP5</span>
+        </div>
+        <span class="code-applied-status">Auto-Applies</span>
+      </div>
+
+      <div class="faq-popup-actions">
+        <button class="btn-claim-discount" id="claimDiscountBtn">
+          Claim 5% Discount (POP5) →
+        </button>
+        <button class="btn-dismiss-popup" id="dismissPopupBtn">
+          No thanks, continue browsing
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       INTERACTIVE FREE CONSULTATION MODAL
+       ========================================== -->
+  <div class="modal-overlay" id="contactModal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">✕</button>
+      
+      <div class="modal-header">
+        <span class="modal-eyebrow">FREE CONSULTATION • NO PRESSURE</span>
+        <h3 class="modal-title">Let’s Talk About Your Website</h3>
+        <p class="modal-subtitle">Tell me about your business, what you need, and where your current website falls short.</p>
+      </div>
+
+      <!-- Applied Discount Banner -->
+      <div class="modal-discount-banner" id="modalDiscountBanner" style="display: none;">
+        <span class="discount-badge-icon">🎉</span>
+        <div class="discount-banner-text">
+          <strong>Promo Code POP5 Applied: 5% Discount Active!</strong>
+          <p>Your 5% savings will be locked into your official project proposal.</p>
+        </div>
+      </div>
+
+      <form class="modal-form" id="inquiryForm" action="https://formsubmit.co/darshandayanand599@gmail.com" method="POST" onsubmit="event.preventDefault(); handleFormSubmit();">
+        <!-- FormSubmit Configuration -->
+        <input type="hidden" name="_subject" id="emailSubjectField" value="🚀 New Website Consultation Request - ApexCraft">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        
+        <!-- Discount & Source Tracking Fields for Gmail Notification -->
+        <input type="hidden" name="Discount_Code" id="discountCodeField" value="None">
+        <input type="hidden" name="Lead_Source" id="leadSourceField" value="Direct Website Consultation">
+
+        <div class="form-group">
+          <label for="clientName">Your Name *</label>
+          <input type="text" id="clientName" name="Name" required placeholder="e.g. Rahul Sharma">
+        </div>
+
+        <div class="form-group">
+          <label for="clientEmail">Email Address *</label>
+          <input type="email" id="clientEmail" name="Email" required placeholder="e.g. rahul@consulting.com">
+        </div>
+
+        <div class="form-group">
+          <label for="clientPhone">WhatsApp / Phone Number</label>
+          <input type="tel" id="clientPhone" name="WhatsApp_Phone" placeholder="+91 98765 43210">
+        </div>
+
+        <div class="form-group">
+          <label for="clientBusiness">Business / Role</label>
+          <select id="clientBusiness" name="Business_Role">
+            <option value="Executive Coach / Trainer">Executive Coach / Trainer</option>
+            <option value="Business Consultant / Advisory">Business Consultant / Advisory</option>
+            <option value="Subject Matter Expert">Subject Matter Expert</option>
+            <option value="Personal Brand">Personal Brand</option>
+            <option value="Growing Service Business">Growing Service Business</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group" id="tierSelectGroup" style="display: none;">
+          <label for="clientTier">Interested Package</label>
+          <select id="clientTier" name="Selected_Package" disabled>
+            <option value="Starter (₹9,900)">Starter — ₹9,900 (1 Page)</option>
+            <option value="Professional (₹19,900)">Professional — ₹19,900 (Up to 5 Pages)</option>
+            <option value="Premium (₹29,900)">Premium — ₹29,900 (Up to 8 Pages)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="clientWebsite">Current Website URL (if any)</label>
+          <input type="url" id="clientWebsite" name="Current_Website" placeholder="https://yourwebsite.com">
+        </div>
+
+        <div class="form-group">
+          <label for="clientMessage">What are you hoping to accomplish?</label>
+          <textarea id="clientMessage" name="Project_Goals" rows="3" placeholder="Tell us about what you do, who you help, and what would make the biggest difference..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit-modal" id="submitFormBtn">
+          Request Free Consultation →
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js?v=4.0"></script>
+</body>
+</html>
