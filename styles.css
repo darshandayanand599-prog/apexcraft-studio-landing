@@ -265,8 +265,11 @@ button {
   color: #ffffff !important;
 }
 
-.phone-icon {
-  font-size: 0.85rem;
+.header-phone-svg {
+  width: 15px;
+  height: 15px;
+  fill: #ffffff;
+  flex-shrink: 0;
 }
 
 /* Mobile Toggle */
