@@ -549,7 +549,7 @@ function handleFormSubmit() {
 
   const formData = new FormData(form);
 
-  fetch('https://formsubmit.co/ajax/darshandayanand599@gmail.com', {
+  fetch('https://formsubmit.co/ajax/contact@oneloom.co.in', {
     method: 'POST',
     headers: {
       'Accept': 'application/json'
