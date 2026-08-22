@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-56Q9V5MP');</script>
+  <!-- End Google Tag Manager -->
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
@@ -23,6 +31,10 @@
   <link rel="stylesheet" href="styles.css?v=4.0">
 </head>
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-56Q9V5MP"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
   <!-- Custom Magnetic Cursor for Project / Showcase Cards -->
   <div class="custom-cursor" id="customCursor">
@@ -77,6 +89,13 @@
          HERO SECTION
          ========================================== -->
     <section class="hero-section" id="hero">
+      
+      <!-- Abstract Animated Object Background (Desktop & Mobile Optimized) -->
+      <div class="hero-abstract-wrapper" id="heroAbstractWrapper" aria-hidden="true">
+        <canvas id="heroAbstractCanvas"></canvas>
+        <div class="hero-ambient-glow"></div>
+      </div>
+
       <div class="site-container">
         
         <div class="hero-content">
@@ -93,6 +112,25 @@
           <p class="hero-lead-paragraph">
             A professional website for coaches, consultants, trainers, experts, personal brands, and growing service businesses — designed to make your expertise clear, build trust, and give potential clients an easy reason to get in touch.
           </p>
+
+          <!-- Compact Single-Line Trust Badge Bar (Continuous Marquee Flow) -->
+          <div class="hero-trust-bar">
+            <div class="trust-marquee-track">
+              <span class="trust-item"><span class="trust-badge-icon">✦</span> 25+ Bespoke Websites</span>
+              <span class="trust-dot">•</span>
+              <span class="trust-item"><span class="trust-badge-icon">★</span> 5.0 Client Rating</span>
+              <span class="trust-dot">•</span>
+              <span class="trust-item"><span class="trust-badge-icon">✓</span> 100% Fixed-Scope & On-Time</span>
+              <span class="trust-dot">•</span>
+              <!-- Duplicate Set for Infinite Marquee Ticker Loop -->
+              <span class="trust-item trust-duplicate"><span class="trust-badge-icon">✦</span> 25+ Bespoke Websites</span>
+              <span class="trust-dot trust-duplicate">•</span>
+              <span class="trust-item trust-duplicate"><span class="trust-badge-icon">★</span> 5.0 Client Rating</span>
+              <span class="trust-dot trust-duplicate">•</span>
+              <span class="trust-item trust-duplicate"><span class="trust-badge-icon">✓</span> 100% Fixed-Scope & On-Time</span>
+              <span class="trust-dot trust-duplicate">•</span>
+            </div>
+          </div>
 
           <div class="hero-cta-wrapper">
             <a href="#contact" class="btn-primary open-contact-modal" id="heroPrimaryCta">
@@ -133,43 +171,55 @@
         <div class="portfolio-carousel-wrapper" id="portfolioCarouselWrapper">
           <div class="portfolio-carousel-track" id="portfolioGrid">
             
-            <!-- Card 1: Desktop High-Converting Mockup -->
+            <!-- Card 1: Rohan Sharma - Business Growth Consultant -->
             <article class="project-card" data-category="consultants">
               <div class="card-media-wrapper">
-                <img src="images/hero_showcase.jpg" alt="High converting custom website showcase mockup" loading="lazy" class="project-img">
+                <img src="images/rohan_sharma.jpg" alt="Rohan Sharma Business Growth Consultant website mockup" loading="lazy" class="project-img">
                 <div class="card-hover-overlay"></div>
               </div>
               <div class="card-meta">
-                <h2 class="project-title">Strategy & Authority Web Design</h2>
-                <span class="project-category">Custom Layout & Messaging</span>
+                <h2 class="project-title">Business Growth & Strategy</h2>
+                <span class="project-category">Consulting & Advisory Architecture</span>
               </div>
             </article>
 
-            <!-- Card 2: Mobile Responsive Mockup -->
+            <!-- Card 2: Summit Grit - Outdoor Leadership Expeditions -->
             <article class="project-card" data-category="coaches">
               <div class="card-media-wrapper">
-                <img src="images/responsive_showcase.jpg" alt="Responsive mobile and desktop custom website design" loading="lazy" class="project-img">
+                <img src="images/summit_grit.jpg" alt="Summit Grit Outdoor Leadership Expeditions website mockup" loading="lazy" class="project-img">
                 <div class="card-hover-overlay"></div>
               </div>
               <div class="card-meta">
-                <h2 class="project-title">Mobile-First Fluid Experience</h2>
-                <span class="project-category">iOS, Android & Desktop Optimized</span>
+                <h2 class="project-title">Outdoor Leadership & Mindset</h2>
+                <span class="project-category">High-Impact Expedition Platform</span>
               </div>
             </article>
 
-            <!-- Card 3: Fintech & Modern Consulting -->
+            <!-- Card 3: Aparna Sharma - Life & Wellness Coach -->
+            <article class="project-card" data-category="coaches">
+              <div class="card-media-wrapper">
+                <img src="images/aparna_sharma.jpg" alt="Aparna Sharma Life and Wellness Coach website mockup" loading="lazy" class="project-img">
+                <div class="card-hover-overlay"></div>
+              </div>
+              <div class="card-meta">
+                <h2 class="project-title">Life & Wellness Transformation</h2>
+                <span class="project-category">Tablet & Touch Optimized Experience</span>
+              </div>
+            </article>
+
+            <!-- Card 4: Arun Sharma - Creative Studio Coach -->
             <article class="project-card" data-category="consultants">
               <div class="card-media-wrapper">
-                <img src="images/namier_capital.jpg" alt="Modern consulting app and web design showcase" loading="lazy" class="project-img">
+                <img src="images/arun_sharma.jpg" alt="Arun Sharma Creative Studio Coach website mockup" loading="lazy" class="project-img">
                 <div class="card-hover-overlay"></div>
               </div>
               <div class="card-meta">
-                <h2 class="project-title">Executive & Advisory Presence</h2>
-                <span class="project-category">High-Trust Architecture</span>
+                <h2 class="project-title">Creative Studio Mentorship</h2>
+                <span class="project-category">Authority & Mentorship Funnel</span>
               </div>
             </article>
 
-            <!-- Card 4: Brand Identity & Packaging -->
+            <!-- Card 5: Brand Identity & Packaging (PRESERVED AS REQUESTED) -->
             <article class="project-card" data-category="brands">
               <div class="card-media-wrapper">
                 <img src="images/swski_brand.jpg" alt="Personal brand positioning and design" loading="lazy" class="project-img">
@@ -177,7 +227,7 @@
               </div>
               <div class="card-meta">
                 <h2 class="project-title">Premium Brand Positioning</h2>
-                <span class="project-category">Visual Identity & Assets</span>
+                <span class="project-category">Visual Identity & Packaging</span>
               </div>
             </article>
 
@@ -1276,10 +1326,11 @@
       </div>
 
       <form class="modal-form" id="inquiryForm" action="https://formsubmit.co/darshandayanand599@gmail.com" method="POST" onsubmit="event.preventDefault(); handleFormSubmit();">
-        <!-- FormSubmit Configuration -->
+        <!-- FormSubmit Configuration & Conversion Tracking Redirect -->
         <input type="hidden" name="_subject" id="emailSubjectField" value="🚀 New Website Consultation Request - ApexCraft">
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" id="nextUrlField" value="thank-you.html">
         
         <!-- Discount & Source Tracking Fields for Gmail Notification -->
         <input type="hidden" name="Discount_Code" id="discountCodeField" value="None">

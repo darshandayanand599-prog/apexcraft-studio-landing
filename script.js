@@ -13,6 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initContactModal();
   initFaqDiscountPopup();
   initMobileMenu();
+  initScrollAnimations();
+  initHeroCanvasObject();
 });
 
 /* --------------------------------------------------------------------------
@@ -554,23 +556,20 @@ function handleFormSubmit() {
     },
     body: formData
   })
-  .then(response => response.json())
   .then(result => {
     if (result.success === true || result.success === "true") {
-      btn.textContent = '✓ Consultation Requested!';
+      btn.textContent = '✓ Request Received! Redirecting...';
       btn.style.backgroundColor = '#10b981';
 
+      // Store submission flag in session
+      sessionStorage.setItem('lead_submitted', 'true');
+
+      // Redirect to Thank You page for Conversion Tracking
       setTimeout(() => {
-        const modal = document.getElementById('contactModal');
-        if (modal) modal.classList.remove('active');
-        document.body.style.overflow = '';
-        btn.textContent = originalText;
-        btn.style.backgroundColor = '';
-        btn.disabled = false;
-        if (form) form.reset();
-      }, 1800);
+        window.location.href = 'thank-you.html';
+      }, 400);
     } else {
-      // If FormSubmit requires standard submit fallback
+      // FormSubmit standard submit fallback
       form.submit();
     }
   })
@@ -600,3 +599,197 @@ function initMobileMenu() {
     });
   });
 }
+
+/* --------------------------------------------------------------------------
+   8. HIGH-PERFORMANCE INTERSECTION OBSERVER SCROLL REVEAL & SPIROGRAPH ROTATION
+   -------------------------------------------------------------------------- */
+function initScrollAnimations() {
+  const autoTargets = [
+    '.hero-content',
+    '.hero-cta-wrapper',
+    '.filter-bar',
+    '.project-card',
+    '.section-heading-large',
+    '.editorial-story-block',
+    '.story-callout-card',
+    '.clarity-card',
+    '.vision-hero-card',
+    '.vision-point',
+    '.build-statement-card',
+    '.accordion-item',
+    '.q-flow-item',
+    '.process-dark-section',
+    '.process-orbital-stage',
+    '.capability-card',
+    '.target-badge',
+    '.useful-when-box',
+    '.pricing-card',
+    '.pricing-guarantee-card',
+    '.faq-layout',
+    '.footer-cta-card'
+  ];
+
+  autoTargets.forEach(selector => {
+    document.querySelectorAll(selector).forEach(el => {
+      if (!el.classList.contains('reveal-on-scroll')) {
+        el.classList.add('reveal-on-scroll', 'reveal-up');
+        if (el.parentElement && (
+            el.parentElement.classList.contains('clarity-grid') || 
+            el.parentElement.classList.contains('vision-points-grid') ||
+            el.parentElement.classList.contains('capabilities-grid') ||
+            el.parentElement.classList.contains('pricing-cards-grid') ||
+            el.parentElement.classList.contains('questions-flow-grid') ||
+            el.parentElement.classList.contains('target-badges-cloud') ||
+            el.parentElement.classList.contains('portfolio-carousel-track')
+        )) {
+          el.parentElement.classList.add('stagger-parent');
+        }
+      }
+    });
+  });
+
+  const revealElements = document.querySelectorAll('.reveal-on-scroll');
+  if (!revealElements.length) return;
+
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px 0px -40px 0px',
+    threshold: 0.08
+  };
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        obs.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  revealElements.forEach(el => observer.observe(el));
+
+  // Dynamic Spirograph Rotation on Scroll
+  const spirographs = document.querySelectorAll('.spirograph-svg');
+  if (spirographs.length) {
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      spirographs.forEach((spiro, idx) => {
+        const speed = (idx % 2 === 0) ? 0.04 : -0.04;
+        spiro.style.transform = `rotate(${scrollY * speed}deg)`;
+      });
+    }, { passive: true });
+  }
+}
+
+/* --------------------------------------------------------------------------
+   9. INTERACTIVE ANIMATED ABSTRACT GEOMETRIC CANVAS OBJECT (HERO BACKGROUND)
+   -------------------------------------------------------------------------- */
+function initHeroCanvasObject() {
+  const canvas = document.getElementById('heroAbstractCanvas');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+
+  let width = 0;
+  let height = 0;
+
+  function resize() {
+    const rect = canvas.getBoundingClientRect();
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    width = rect.width;
+    height = rect.height;
+    canvas.width = width * dpr;
+    canvas.height = height * dpr;
+    ctx.scale(dpr, dpr);
+  }
+
+  resize();
+  window.addEventListener('resize', resize, { passive: true });
+
+  let rotation = 0;
+  let mouseX = 0;
+  let mouseY = 0;
+  let targetX = 0;
+  let targetY = 0;
+
+  if (!window.matchMedia('(pointer: coarse)').matches) {
+    document.addEventListener('mousemove', (e) => {
+      mouseX = (e.clientX / window.innerWidth - 0.5) * 25;
+      mouseY = (e.clientY / window.innerHeight - 0.5) * 25;
+    }, { passive: true });
+  }
+
+  function draw() {
+    targetX += (mouseX - targetX) * 0.04;
+    targetY += (mouseY - targetY) * 0.04;
+    rotation += 0.0035;
+
+    ctx.clearRect(0, 0, width, height);
+
+    if (width === 0 || height === 0) {
+      requestAnimationFrame(draw);
+      return;
+    }
+
+    const centerX = width / 2 + targetX;
+    const centerY = height / 2 + targetY;
+    const maxRadius = Math.min(width, height) * 0.44;
+    const numPetals = 16;
+
+    ctx.save();
+    ctx.translate(centerX, centerY);
+
+    // Multi-layered geometric iris petals
+    for (let i = 0; i < numPetals; i++) {
+      const angle = (i * Math.PI * 2) / numPetals + rotation;
+      ctx.save();
+      ctx.rotate(angle);
+
+      // Outer delicate ellipse
+      ctx.beginPath();
+      ctx.ellipse(maxRadius * 0.38, 0, maxRadius * 0.38, maxRadius * 0.16, 0, 0, Math.PI * 2);
+      ctx.strokeStyle = (i % 2 === 0) ? 'rgba(255, 56, 35, 0.42)' : 'rgba(240, 192, 186, 0.65)';
+      ctx.lineWidth = 1.1;
+      ctx.stroke();
+
+      // Inner orbiting ring
+      ctx.beginPath();
+      ctx.arc(maxRadius * 0.22, 0, maxRadius * 0.12, 0, Math.PI * 2);
+      ctx.strokeStyle = 'rgba(255, 56, 35, 0.2)';
+      ctx.lineWidth = 0.8;
+      ctx.stroke();
+
+      // Pulsing node glow point
+      const pulse = 3 + Math.sin(rotation * 4 + i) * 1.5;
+      ctx.beginPath();
+      ctx.arc(maxRadius * 0.58, 0, pulse, 0, Math.PI * 2);
+      ctx.fillStyle = '#ff3823';
+      ctx.shadowColor = 'rgba(255, 56, 35, 0.8)';
+      ctx.shadowBlur = 6;
+      ctx.fill();
+
+      ctx.restore();
+    }
+
+    // Outer framing ring
+    ctx.beginPath();
+    ctx.arc(0, 0, maxRadius * 0.74, 0, Math.PI * 2);
+    ctx.strokeStyle = 'rgba(255, 56, 35, 0.18)';
+    ctx.lineWidth = 1;
+    ctx.stroke();
+
+    // Center core iris
+    ctx.beginPath();
+    ctx.arc(0, 0, maxRadius * 0.18, 0, Math.PI * 2);
+    ctx.strokeStyle = '#ff3823';
+    ctx.lineWidth = 1.6;
+    ctx.stroke();
+
+    ctx.restore();
+
+    requestAnimationFrame(draw);
+  }
+
+  draw();
+}
+
+
