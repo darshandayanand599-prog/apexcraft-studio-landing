@@ -544,14 +544,10 @@ function handleFormSubmit(e) {
     btn.disabled = true;
   }
 
-  // Ensure _next redirect URL is absolute for FormSubmit
+  // Set production domain for FormSubmit redirect & activation
   const nextField = document.getElementById('nextUrlField');
   if (nextField) {
-    if (window.location.protocol.startsWith('http')) {
-      nextField.value = window.location.origin + '/thank-you.html';
-    } else {
-      nextField.value = 'thank-you.html';
-    }
+    nextField.value = 'https://oneloom.co.in/thank-you.html';
   }
 
   // Store session flag for conversion page
