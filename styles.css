@@ -2767,22 +2767,16 @@ button {
     font-size: 0.72rem;
   }
 
-  /* 2-Column Grid Row Layout on Mobile */
+  /* Streamlined Single-Column Vertical Flow on Mobile */
   .modal-form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0.65rem 0.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
   }
 
   .modal-form .form-group {
+    width: 100%;
     margin-bottom: 0;
-  }
-
-  /* Full width items on mobile for Phone, Package & Submit */
-  .modal-form .form-group:nth-child(3),
-  .modal-form #tierSelectGroup,
-  .modal-form .btn-submit-modal {
-    grid-column: 1 / -1;
   }
 
   .modal-form label {
