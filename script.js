@@ -533,50 +533,34 @@ function initFaqDiscountPopup() {
   }
 }
 
-function handleFormSubmit() {
+function handleFormSubmit(e) {
+  if (e) e.preventDefault();
+  
   const form = document.getElementById('inquiryForm');
   const btn = document.getElementById('submitFormBtn');
-  const originalText = btn.textContent;
   
-  btn.textContent = 'Sending Details...';
-  btn.disabled = true;
-
-  // If running directly as local file:/// instead of http://localhost, use standard POST
-  if (window.location.protocol === 'file:') {
-    form.submit();
-    return;
+  if (btn) {
+    btn.textContent = 'Sending Details...';
+    btn.disabled = true;
   }
 
-  const formData = new FormData(form);
-
-  fetch('https://formsubmit.co/ajax/contact@oneloom.co.in', {
-    method: 'POST',
-    headers: {
-      'Accept': 'application/json'
-    },
-    body: formData
-  })
-  .then(result => {
-    if (result.success === true || result.success === "true") {
-      btn.textContent = '✓ Request Received! Redirecting...';
-      btn.style.backgroundColor = '#10b981';
-
-      // Store submission flag in session
-      sessionStorage.setItem('lead_submitted', 'true');
-
-      // Redirect to Thank You page for Conversion Tracking
-      setTimeout(() => {
-        window.location.href = 'thank-you.html';
-      }, 400);
+  // Ensure _next redirect URL is absolute for FormSubmit
+  const nextField = document.getElementById('nextUrlField');
+  if (nextField) {
+    if (window.location.protocol.startsWith('http')) {
+      nextField.value = window.location.origin + '/thank-you.html';
     } else {
-      // FormSubmit standard submit fallback
-      form.submit();
+      nextField.value = 'thank-you.html';
     }
-  })
-  .catch(error => {
-    console.error('Submission fallback:', error);
-    form.submit();
-  });
+  }
+
+  // Store session flag for conversion page
+  sessionStorage.setItem('lead_submitted', 'true');
+
+  // Submit form via standard POST for 100% reliable email delivery & FormSubmit activation
+  if (form) {
+    HTMLFormElement.prototype.submit.call(form);
+  }
 }
 
 /* --------------------------------------------------------------------------
