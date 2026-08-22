@@ -2771,17 +2771,15 @@ button {
   .modal-form {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0.45rem 0.5rem;
+    gap: 0.65rem 0.6rem;
   }
 
   .modal-form .form-group {
     margin-bottom: 0;
   }
 
-  /* Full width items on mobile */
-  .modal-form .form-group:nth-child(5),
-  .modal-form .form-group:nth-child(6),
-  .modal-form .form-group:nth-child(7),
+  /* Full width items on mobile for Phone, Package & Submit */
+  .modal-form .form-group:nth-child(3),
   .modal-form #tierSelectGroup,
   .modal-form .btn-submit-modal {
     grid-column: 1 / -1;
