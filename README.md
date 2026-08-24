@@ -1,6 +1,6 @@
-# ApexCraft Studio — Landing Page
+# oneloom — Landing Page
 
-A high-conversion landing page for **ApexCraft Studio**, a custom web design & strategy service based in Bangalore, serving coaches, consultants, experts, and service businesses across India.
+A high-conversion landing page for **oneloom**, a custom web design & strategy service based in Bangalore, serving coaches, consultants, experts, and service businesses across India.
 
 ## 🚀 Live Features
 
@@ -51,8 +51,8 @@ Then visit `http://localhost:3000`
 ## 📧 Lead Routing
 
 All form submissions are sent via [FormSubmit](https://formsubmit.co) to the configured email. The email subject and metadata fields change automatically based on whether the lead came through:
-- Direct CTA → Subject: `🚀 New Website Consultation Request - ApexCraft`
-- FAQ Discount Pop-up → Subject: `🚀 New Website Lead [POP5 5% Discount Claimed] - ApexCraft`
+- Direct CTA → Subject: `🚀 New Website Consultation Request - oneloom`
+- FAQ Discount Pop-up → Subject: `🚀 New Website Lead [POP5 5% Discount Claimed] - oneloom`
 
 ## 🎨 Design System
 

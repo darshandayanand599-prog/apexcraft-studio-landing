@@ -1,5 +1,5 @@
 /**
- * ApexCraft Studio — Swiss Editorial Web Design & Strategy
+ * oneloom — Swiss Editorial Web Design & Strategy
  * Interactions & Interactive Modules
  */
 
@@ -411,7 +411,7 @@ function initContactModal() {
     if (discountBanner) discountBanner.style.display = 'none';
     if (discountCodeField) discountCodeField.value = 'None';
     if (leadSourceField) leadSourceField.value = 'Direct Website Consultation';
-    if (emailSubjectField) emailSubjectField.value = '🚀 New Website Consultation Request - ApexCraft';
+    if (emailSubjectField) emailSubjectField.value = '🚀 New Website Consultation Request - oneloom';
 
     if (e) {
       e.preventDefault();
@@ -518,7 +518,7 @@ function initFaqDiscountPopup() {
         if (discountBanner) discountBanner.style.display = 'flex';
         if (discountCodeField) discountCodeField.value = 'POP5 (5% Off Auto-Applied via FAQ Pop-up)';
         if (leadSourceField) leadSourceField.value = 'FAQ Discount Pop-up (POP5)';
-        if (emailSubjectField) emailSubjectField.value = '🚀 New Website Lead [POP5 5% Discount Claimed] - ApexCraft';
+        if (emailSubjectField) emailSubjectField.value = '🚀 New Website Lead [POP5 5% Discount Claimed] - oneloom';
         
         // Show the package selector so they choose their package with the 5% discount
         if (tierGroup && tierSelect) {
