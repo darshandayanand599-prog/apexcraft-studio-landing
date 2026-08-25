@@ -590,6 +590,8 @@ function initScrollAnimations() {
     '.filter-bar',
     '.project-card',
     '.section-heading-large',
+    '.section-header',
+    '.section-eyebrow',
     '.editorial-story-block',
     '.story-callout-card',
     '.clarity-card',
@@ -606,7 +608,8 @@ function initScrollAnimations() {
     '.pricing-card',
     '.pricing-guarantee-card',
     '.faq-layout',
-    '.footer-cta-card'
+    '.footer-cta-card',
+    '.step-card'
   ];
 
   autoTargets.forEach(selector => {
@@ -620,7 +623,8 @@ function initScrollAnimations() {
             el.parentElement.classList.contains('pricing-cards-grid') ||
             el.parentElement.classList.contains('questions-flow-grid') ||
             el.parentElement.classList.contains('target-badges-cloud') ||
-            el.parentElement.classList.contains('portfolio-carousel-track')
+            el.parentElement.classList.contains('portfolio-carousel-track') ||
+            el.parentElement.classList.contains('portfolio-grid')
         )) {
           el.parentElement.classList.add('stagger-parent');
         }
@@ -629,24 +633,43 @@ function initScrollAnimations() {
   });
 
   const revealElements = document.querySelectorAll('.reveal-on-scroll');
-  if (!revealElements.length) return;
+  if (revealElements.length) {
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px 0px -30px 0px',
+      threshold: 0.05
+    };
 
-  const observerOptions = {
-    root: null,
-    rootMargin: '0px 0px -40px 0px',
-    threshold: 0.08
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    revealElements.forEach(el => observer.observe(el));
+  }
+
+  // Top Reading Scroll Progress Bar
+  let progressBar = document.querySelector('.scroll-progress-bar');
+  if (!progressBar) {
+    progressBar = document.createElement('div');
+    progressBar.className = 'scroll-progress-bar';
+    document.body.appendChild(progressBar);
+  }
+
+  const updateScrollProgress = () => {
+    const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+    if (totalHeight > 0) {
+      const progress = (window.scrollY / totalHeight) * 100;
+      progressBar.style.width = `${Math.min(100, Math.max(0, progress))}%`;
+    }
   };
 
-  const observer = new IntersectionObserver((entries, obs) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-        obs.unobserve(entry.target);
-      }
-    });
-  }, observerOptions);
-
-  revealElements.forEach(el => observer.observe(el));
+  window.addEventListener('scroll', updateScrollProgress, { passive: true });
+  updateScrollProgress();
 
   // Dynamic Spirograph Rotation on Scroll
   const spirographs = document.querySelectorAll('.spirograph-svg');
